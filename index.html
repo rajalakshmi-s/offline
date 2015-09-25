@@ -11,7 +11,7 @@
 
         userModel = new UserModel();
         userModel.bind("change", function(model, collection){
-          alert("You set user_attribute to " + model.get('user_attribute'));
+          alert("You set user_attribute to be " + model.get('user_attribute'));
         });
 
         userModel.set({user_attribute: "user value"});
@@ -54,8 +54,8 @@
   </head>
   <body>
     <form action="/login" id="login-form">
-      Username: <input type="text" id="username"><br>
-      Password: <input type="password" id="password"><br>
+      Username: <input type="text" id="username" ><br>
+      Password: <input type="password" id="password" ><br>
       <button id="login">Login</button>
     </form>
   </body>
